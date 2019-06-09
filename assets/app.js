@@ -2,7 +2,10 @@
 // button id="todoBtn"
 $(document).ready(function(){
     $("#todoBtn").on("click", function(){
+        event.preventDefault()
         var text = $("#todoText").val()
-        console.log(text)
+        $("#todoGroup").append(
+            `<li class="list-group-item">${text}</li>`
+        )
     })
 })
