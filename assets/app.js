@@ -8,8 +8,12 @@ $(document).ready(function(){
         var text = $("#todoText").val()
         todoArray.push("todoText")
         console.log(todoArray)
+        $("#todoGroup").empty()
+        for (let i=0; i < todoArray.length; i++){
+
+        }
         $("#todoGroup").append(
-            `<li class="list-group-item">${text}</li>`
+            `<li class="list-group-item">${todoArray[i]}</li>`
         )
     })
 })
