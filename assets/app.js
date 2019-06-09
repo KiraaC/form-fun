@@ -1,3 +1,7 @@
+// id="todoText"
+// button id="todoBtn"
 $(document).ready(function(){
-    console.log("hi")
+    $("#todoBtn").on("click", function(){
+        console.log("hello")
+    })
 })
