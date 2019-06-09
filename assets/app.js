@@ -2,6 +2,7 @@
 // button id="todoBtn"
 $(document).ready(function(){
     $("#todoBtn").on("click", function(){
-        console.log("hello")
+        var text = $("#todoText").val()
+        console.log(text)
     })
 })
